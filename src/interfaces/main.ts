@@ -15,4 +15,5 @@ export interface IExperience {
   dates: string
   description: string
   imagePath?: string
+  image: any
 }
