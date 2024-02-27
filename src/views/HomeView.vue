@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import CanvasSection from '@/components/CanvasSection.vue'
-import { useExperienceStore } from '@/stores/experience';
-import { onMounted, onUnmounted } from 'vue';
+import { useExperienceStore } from '@/stores/experience'
+import { onMounted, onUnmounted } from 'vue'
 import ExperienceItem from '@/components/ExperienceItem.vue'
 
 const experienceStore = useExperienceStore()
 let fadeInElements: HTMLElement[] = []
 
 const isElemVisible = (el: HTMLElement) => {
-      var rect = el.getBoundingClientRect()
-      var elemTop = rect.top + 200 // 200 = buffer
-      var elemBottom = rect.bottom
-      return elemTop < window.innerHeight && elemBottom >= 0
+  var rect = el.getBoundingClientRect()
+  var elemTop = rect.top + 200 // 200 = buffer
+  var elemBottom = rect.bottom
+  return elemTop < window.innerHeight && elemBottom >= 0
 }
 
 const handleScroll = () => {
-      for (var i = 0; i < fadeInElements.length; i++) {
-        var elem = fadeInElements[i]
-        if (isElemVisible(elem)) {
-          elem.style.opacity = '1'
-          elem.style.transform = 'scale(1)'
-          fadeInElements.splice(i, 1) // only allow it to run once
-        }
-      }
+  for (var i = 0; i < fadeInElements.length; i++) {
+    var elem = fadeInElements[i]
+    if (isElemVisible(elem)) {
+      elem.style.opacity = '1'
+      elem.style.transform = 'scale(1)'
+      fadeInElements.splice(i, 1) // only allow it to run once
+    }
+  }
 }
 
 function scrollToElement(id: string) {
@@ -78,26 +78,33 @@ onUnmounted(() => {
             <div>
               <img src="@/assets/profile_pic.png" alt="ProfilePic" class="mb-4 h-36 w-36 fade-in" />
               <p class="mb-2 md:pr-20 fade-in">
-                I am a DevOps Consultant with a passion for AWS and all things cloud. Coming from a systems administrator background, I have been helping businesses in a DevOps capacity across a range of industries for over 10 years.
+                I am a DevOps Consultant with a passion for AWS and all things cloud. Coming from a
+                systems administrator background, I have been helping businesses in a DevOps
+                capacity across a range of industries for over 10 years.
               </p>
               <p class="mb-2 md:pr-20 fade-in">
                 I have a strong focus on several key pillars of platform engineering:
-                <ul class="list-disc ml-10 mb-2 fade-in">
-                  <li>Infrastructure as Code</li>
-                  <li>Culture & Collaboration</li>
-                  <li>Continuous Integration / Continuous Deployment</li>
-                  <li>Monitoring & Observability</li>
-                  <li>Security & Compliance</li>
-                </ul>
+              </p>
+              <ul class="list-disc ml-10 mb-2 fade-in">
+                <li>Infrastructure as Code</li>
+                <li>Culture & Collaboration</li>
+                <li>Continuous Integration / Continuous Deployment</li>
+                <li>Monitoring & Observability</li>
+                <li>Security & Compliance</li>
+              </ul>
+              <p class="mb-2 md:pr-20 fade-in">
+                Outside of technology, I have a passion for music and am involved in organizing a
+                regular club night in London. I also run a record label alongside the events brand,
+                with the aim of promoting new and upcoming artists.
               </p>
               <p class="mb-2 md:pr-20 fade-in">
-                Outside of technology, I have a passion for music and am involved in organizing a regular club night in London. I also run a record label alongside the events brand, with the aim of promoting new and upcoming artists.
-              </p>
-              <p class="mb-2 md:pr-20 fade-in">
-                In my spare time I enjoy climbing, watching sport and keeping up to speed with the latest tech trends.
+                In my spare time I enjoy climbing, watching sport and keeping up to speed with the
+                latest tech trends.
               </p>
               <p class="pb-2 md:pr-20 fade-in">
-                Last but not least, I am also a father to two amazing children, and husband to an amazing wife. They keep me on my toes and I learn more about myself from them all the time.
+                Last but not least, I am also a father to two amazing children, and husband to an
+                amazing wife. They keep me on my toes and I learn more about myself from them all
+                the time.
               </p>
             </div>
           </div>
@@ -107,7 +114,10 @@ onUnmounted(() => {
         <div id="experience" class="p-10">
           <div class="grid sm:w-128">
             <div class="text-3xl mb-4">Experience</div>
-            <div v-for="experienceItem in experienceStore.experience" v-bind:key="experienceItem.dates">
+            <div
+              v-for="experienceItem in experienceStore.experience"
+              v-bind:key="experienceItem.dates"
+            >
               <ExperienceItem v-bind="experienceItem" />
             </div>
           </div>
@@ -118,9 +128,9 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
- .fade-in {
-    opacity: 0;
-    transition: 0.3s all ease-out;
-    transform: scale(0.8);
-  }
+.fade-in {
+  opacity: 0;
+  transition: 0.3s all ease-out;
+  transform: scale(0.8);
+}
 </style>

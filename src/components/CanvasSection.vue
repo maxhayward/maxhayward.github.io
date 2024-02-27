@@ -281,5 +281,4 @@ onMounted(() => {
   </main>
 </template>
 
-<style>
-</style>
+<style></style>
