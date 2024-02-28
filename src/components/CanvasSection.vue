@@ -9,7 +9,7 @@ onMounted(() => {
   let can_h = parseInt(canvas.getAttribute('height')!)
   const ctx = canvas.getContext('2d')!
 
-  const BALL_NUM = 30
+  const BALL_NUM = 60
 
   // const ball: IBall = {
   //   x: 0,
@@ -33,12 +33,12 @@ onMounted(() => {
     b: 255
   }
 
-  const R = 2
+  const R = 4
   let balls: IBall[] = []
   const alpha_f = 0.03
   // const alpha_phase = 0
   // Line
-  const link_line_width = 0.8
+  const link_line_width = 1.5
   const dis_limit = 260
   // const add_mouse_point = true
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -87,7 +87,7 @@ onMounted(() => {
           vx: getRandomSpeed('top')![0],
           vy: getRandomSpeed('top')![1],
           r: R,
-          alpha: 1,
+          alpha: 2,
           phase: randomNumFrom(0, 10)
         }
       case 'right':
@@ -97,7 +97,7 @@ onMounted(() => {
           vx: getRandomSpeed('right')![0],
           vy: getRandomSpeed('right')![1],
           r: R,
-          alpha: 1,
+          alpha: 2,
           phase: randomNumFrom(0, 10)
         }
       case 'bottom':
@@ -107,7 +107,7 @@ onMounted(() => {
           vx: getRandomSpeed('bottom')![0],
           vy: getRandomSpeed('bottom')![1],
           r: R,
-          alpha: 1,
+          alpha: 2,
           phase: randomNumFrom(0, 10)
         }
       case 'left':
@@ -117,7 +117,7 @@ onMounted(() => {
           vx: getRandomSpeed('left')![0],
           vy: getRandomSpeed('left')![1],
           r: R,
-          alpha: 1,
+          alpha: 2,
           phase: randomNumFrom(0, 10)
         }
     }
@@ -222,7 +222,7 @@ onMounted(() => {
         vx: getRandomSpeed('top')![0],
         vy: getRandomSpeed('top')![1],
         r: R,
-        alpha: 1,
+        alpha: 5,
         phase: randomNumFrom(0, 10)
       })
     }
