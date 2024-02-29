@@ -45,7 +45,7 @@ onMounted(() => {
   // Line
   let link_line_width: number
   if (screen.width < 800) {
-    link_line_width = 0.3
+    link_line_width = 1
   } else {
     link_line_width = 1
   }
@@ -70,7 +70,7 @@ onMounted(() => {
       case 'top':
         return [randomNumFrom(min, max), randomNumFrom(0.1, max)]
       case 'right':
-        return [randomNumFrom(min, -0.1), randomNumFrom(min, max)]
+        return [randomNumFrom(min, -0.5), randomNumFrom(min, max)]
       case 'bottom':
         return [randomNumFrom(min, max), randomNumFrom(min, -0.1)]
       case 'left':
@@ -178,7 +178,7 @@ onMounted(() => {
         fraction = getDisOf(balls[i], balls[j]) / dis_limit
 
         if (fraction < 1) {
-          alpha = (1 - fraction).toString()
+          alpha = ((1 - fraction) * 2).toString()
 
           ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')'
           ctx.lineWidth = link_line_width
