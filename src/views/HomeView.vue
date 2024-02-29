@@ -55,8 +55,7 @@ onUnmounted(() => {
             >
               <p>AWS Enthusiast</p>
               <li>DevOps Evangelist</li>
-              <li>Label Owner</li>
-              <li>Events Promoter</li>
+              <li>Record Label & Events Promoter</li>
               <li>Dad</li>
             </ul>
           </div>

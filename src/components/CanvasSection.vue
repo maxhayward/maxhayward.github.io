@@ -9,7 +9,7 @@ onMounted(() => {
   let can_h = parseInt(canvas.getAttribute('height')!)
   const ctx = canvas.getContext('2d')!
 
-  const BALL_NUM = 60
+  const BALL_NUM = 40
 
   // const ball: IBall = {
   //   x: 0,
