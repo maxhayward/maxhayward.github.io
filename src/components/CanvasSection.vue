@@ -178,7 +178,11 @@ onMounted(() => {
         fraction = getDisOf(balls[i], balls[j]) / dis_limit
 
         if (fraction < 1) {
-          alpha = ((1 - fraction) * 2).toString()
+          if (screen.width < 800) {
+            alpha = ((1 - fraction) * 2).toString()
+          } else {
+            alpha = (1 - fraction).toString()
+          }
 
           ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')'
           ctx.lineWidth = link_line_width
