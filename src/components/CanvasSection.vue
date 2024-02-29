@@ -10,8 +10,8 @@ onMounted(() => {
   const ctx = canvas.getContext('2d')!
 
   let BALL_NUM: number
-  if (screen.width < 400) {
-    BALL_NUM = 30
+  if (screen.width < 800) {
+    BALL_NUM = 10
   } else {
     BALL_NUM = 60
   }
@@ -44,7 +44,7 @@ onMounted(() => {
   // const alpha_phase = 0
   // Line
   let link_line_width: number
-  if (screen.width < 400) {
+  if (screen.width < 800) {
     link_line_width = 0.3
   } else {
     link_line_width = 1
