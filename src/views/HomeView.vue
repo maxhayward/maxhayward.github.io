@@ -51,12 +51,12 @@ onUnmounted(() => {
           <div class="text-4xl pb-4">Max Hayward</div>
           <div>
             <ul
-              class="sm:flex sm:flex-wrap sm:list-disc sm:space-x-6 sm:me-4 text-xl items-center justify-center text-center"
+              class="sm:flex sm:flex-wrap sm:list-disc sm:space-x-6 sm:me-4 text-xl sm:items-center sm:justify-center sm:text-center"
             >
               <p>AWS Enthusiast</p>
               <li>DevOps Evangelist</li>
-              <li>Record Label & Events Promoter</li>
-              <li>Dad</li>
+              <li>Label Manager</li>
+              <li>Events Promoter</li>
             </ul>
           </div>
         </div>
