@@ -54,7 +54,7 @@ onUnmounted(() => {
               class="sm:flex sm:flex-wrap sm:list-disc sm:space-x-6 sm:me-4 text-xl sm:items-center sm:justify-center sm:text-center"
             >
               <p>AWS Enthusiast</p>
-              <li>DevOps Evangelist</li>
+              <li>Cloud & DevOps Evangelist</li>
               <li>Label Manager</li>
               <li>Events Promoter</li>
             </ul>
@@ -77,9 +77,9 @@ onUnmounted(() => {
             <div>
               <img src="@/assets/profile_pic.png" alt="ProfilePic" class="mb-4 h-36 w-36 fade-in" />
               <p class="mb-2 md:pr-20 fade-in">
-                I am a DevOps Consultant with a passion for AWS and all things cloud. Coming from a
-                systems administrator background, I have been helping businesses in a DevOps
-                capacity across a range of industries for over 10 years.
+                I am a DevOps consultant with a passion for all things cloud. Coming from a systems
+                administrator background, I have been helping businesses in a DevOps / platform
+                engineering capacity across a range of industries for over 10 years.
               </p>
               <p class="mb-2 md:pr-20 fade-in">
                 I have a strong focus on several key pillars of platform engineering:
