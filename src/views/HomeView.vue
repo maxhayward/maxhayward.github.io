@@ -126,11 +126,3 @@ onUnmounted(() => {
     </div>
   </main>
 </template>
-
-<style scoped>
-.fade-in {
-  opacity: 0;
-  transition: 0.3s all ease-out;
-  transform: scale(0.8);
-}
-</style>
