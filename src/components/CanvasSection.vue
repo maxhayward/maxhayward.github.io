@@ -38,7 +38,7 @@ onMounted(() => {
   const alpha_f = 0.03
   // const alpha_phase = 0
   // Line
-  const link_line_width = 1.5
+  const link_line_width = 1
   const dis_limit = 260
   // const add_mouse_point = true
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
