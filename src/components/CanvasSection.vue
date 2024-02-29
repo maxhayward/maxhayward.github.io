@@ -9,7 +9,12 @@ onMounted(() => {
   let can_h = parseInt(canvas.getAttribute('height')!)
   const ctx = canvas.getContext('2d')!
 
-  const BALL_NUM = 40
+  let BALL_NUM: number
+  if (screen.width < 400) {
+    BALL_NUM = 30
+  } else {
+    BALL_NUM = 60
+  }
 
   // const ball: IBall = {
   //   x: 0,
@@ -38,7 +43,12 @@ onMounted(() => {
   const alpha_f = 0.03
   // const alpha_phase = 0
   // Line
-  const link_line_width = 1
+  let link_line_width: number
+  if (screen.width < 400) {
+    link_line_width = 0.3
+  } else {
+    link_line_width = 1
+  }
   const dis_limit = 260
   // const add_mouse_point = true
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
