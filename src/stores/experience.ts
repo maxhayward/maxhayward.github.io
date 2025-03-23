@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { type IExperience } from '@/interfaces/main'
-import ten10 from '@/assets/ten10.jpeg'
+import tsf from '@/assets/tsf.jpg'
 import heavySonics from '@/assets/heavysonics.jpeg'
 import echobox from '@/assets/echobox.png'
 import peach from '@/assets/peach.webp'
@@ -12,11 +12,11 @@ export const useExperienceStore = defineStore({
     experience: [
       {
         role: 'Principal Consultant',
-        company: 'Ten10',
+        company: 'The Scale Factory (Part of Ten10)',
         dates: 'August 2023 - Present',
         description:
-          'Primarily my role at Ten10 is focused on the delivery of engagements to customers. I make sure that the lead and senior engineers are working toward the right solutions, making sure that key stakeholders are aligned to our proposed solutions. I also support the sales process, carrying out workshops & healthcheck assessments.',
-        image: ten10
+          'Primarily my role at The Scale Factory (part of Ten10) is focused on the delivery of engagements to customers. I make sure that the lead/senior engineers are working toward the right solutions, whilst being a point of contact for key stakeholders. I also support the sales & hiring processes, carrying out workshops & healthcheck assessments. In November 2024 Ten10 acquired The Scale Factory, and I was involved in the integration of the two companies.',
+        image: tsf
       },
       {
         role: 'Label Manager, Events Promoter, Co-Founder',

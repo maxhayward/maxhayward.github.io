@@ -53,8 +53,7 @@ onUnmounted(() => {
             <ul
               class="sm:flex sm:flex-wrap sm:list-disc sm:space-x-6 sm:me-4 text-xl sm:items-center sm:justify-center sm:text-center"
             >
-              <p>AWS Enthusiast</p>
-              <li>Cloud & DevOps Evangelist</li>
+              <p>DevOps, Cloud & Platform Engineer</p>
               <li>Label Manager</li>
               <li>Events Promoter</li>
             </ul>
@@ -78,8 +77,8 @@ onUnmounted(() => {
               <img src="@/assets/profile_pic.png" alt="ProfilePic" class="mb-4 h-36 w-36 fade-in" />
               <p class="mb-2 md:pr-20 fade-in">
                 I am a DevOps consultant with a passion for all things cloud. Coming from a systems
-                administrator background, I have been helping businesses in a DevOps / platform
-                engineering capacity across a range of industries for over 10 years.
+                administrator background, I have been helping businesses in a DevOps / Platform
+                Engineering capacity across a range of industries for 12 years.
               </p>
               <p class="mb-2 md:pr-20 fade-in">
                 I have a strong focus on several key pillars of platform engineering:
@@ -101,7 +100,7 @@ onUnmounted(() => {
                 latest tech trends.
               </p>
               <p class="pb-2 md:pr-20 fade-in">
-                Last but not least, I am also a father to two amazing children, and husband to an
+                Last but not least, I am also a father to two children, and husband to an
                 amazing wife. They keep me on my toes and I learn more about myself from them all
                 the time.
               </p>
@@ -122,6 +121,13 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
+      <!-- <div class="relative pt-2 bg-gray-900">
+        <div id="experience" class="p-10">
+          <div class="grid sm:w-128">
+            <div class="text-3xl mb-4">Ventures</div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </main>
 </template>
