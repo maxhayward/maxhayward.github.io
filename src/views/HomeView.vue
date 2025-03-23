@@ -77,8 +77,8 @@ onUnmounted(() => {
               <img src="@/assets/profile_pic.png" alt="ProfilePic" class="mb-4 h-36 w-36 fade-in" />
               <p class="mb-2 md:pr-20 fade-in">
                 I am a DevOps consultant with a passion for all things cloud. Coming from a systems
-                administrator background, I have been helping businesses in a DevOps / platform
-                engineering capacity across a range of industries for 12 years.
+                administrator background, I have been helping businesses in a DevOps / Platform
+                Engineering capacity across a range of industries for 12 years.
               </p>
               <p class="mb-2 md:pr-20 fade-in">
                 I have a strong focus on several key pillars of platform engineering:
