@@ -53,7 +53,8 @@ onUnmounted(() => {
             <ul
               class="sm:flex sm:flex-wrap sm:list-disc sm:space-x-6 sm:me-4 text-xl sm:items-center sm:justify-center sm:text-center"
             >
-              <p>DevOps, Cloud & Platform Engineer</p>
+              <li>Technologist</li>
+              <li>Engineering Leader</li>
               <li>Label Manager</li>
               <li>Events Promoter</li>
             </ul>
